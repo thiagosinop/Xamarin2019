@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppBuscaCEP"
+             x:Class="AppBuscaCEP.MainPage">
+
+    <StackLayout  BackgroundColor="#FFBF00" Padding="30" Spacing="30">
+        <StackLayout Padding="-40">
+            <Image Source="Correios.png"/>
+        </StackLayout>
+        <Entry x:Name="tx_Cep" MaxLength="8"  Placeholder="Digite o Cep" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF"  Keyboard="Numeric" />
+        <Button x:Name="bt_BuscarCep" Text="Buscar CEP" TextColor="#FFFFFF"  BackgroundColor="#00416B"  />
+        <StackLayout>
+            <Label Text="Rua: " x:Name="lb_Rua" />
+            <Label Text="Bairro: " x:Name="lb_Bairro" />
+            <Label Text="Cidade: " x:Name="lb_Cidade" />
+            <Label Text="Cód. IBGE: " x:Name="lb_IBGE" />
+            
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
